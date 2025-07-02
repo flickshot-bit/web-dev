@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StrideX – Step Into Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0f0f0f;
+      color: #f2f2f2;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #00ff88;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #111 60%, #0f0f0f);
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero-text h1 span {
+      color: #00ff88;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #00ff88;
+      color: #000;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00cc6a;
+    }
+
+    .hero-image img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .features {
+      padding: 60px 10%;
+      background: #111;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      color: #00ff88;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      background: #000;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">StrideX</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Step into <span>Comfort</span> & <span>Style</span></h1>
+      <p>Experience the future of footwear with StrideX. Designed for athletes, made for everyone.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/736x/18/f6/ea/18f6ea6c64f03f943ea8a9ea16369377.jpg" alt="Shoe Image">
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose StrideX?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>⚡ Ultra Light</h3>
+        <p>Crafted with modern materials for maximum agility and speed.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🧵 Premium Design</h3>
+        <p>Every pair is made with precise stitching and futuristic vibes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🛡️ Durable Sole</h3>
+        <p>Built to withstand all terrains with shock-absorbing tech.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌬️ Breathable Mesh</h3>
+        <p>Perfect airflow keeps your feet dry and fresh all day.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 StrideX Shoes. All rights reserved.
+  </footer>
+
+</body>
+</html>

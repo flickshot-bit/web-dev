@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blinkit – Grocery in Minutes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #222;
+    }
+
+    .logo span {
+      color: #f7b500;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #f7b500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background-color: #fffdee;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #28a745;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #218838;
+    }
+
+    .hero-image img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .categories {
+      padding: 60px 10%;
+      background-color: #f7f7f7;
+      text-align: center;
+    }
+
+    .categories h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+    }
+
+    .category-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .category-card p {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image {
+        margin-top: 30px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">blink<span>it</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Groceries</a>
+      <a href="#">Offers</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Get groceries delivered <span>in 10 minutes</span></h1>
+      <p>Fresh fruits, vegetables, snacks, and everything you need at lightning speed.</p>
+      <a href="#" class="cta-button">Start Shopping</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Groceries" />
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Fruits" />
+        <p>Fruits & Vegetables</p>
+      </div>
+      <div class="category-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt="Snacks" />
+        <p>Snacks & Beverages</p>
+      </div>
+      <div class="category-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Dairy" />
+        <p>Dairy & Bakery</p>
+      </div>
+      <div class="category-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Household" />
+        <p>Household Essentials</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blinkit. All rights reserved.</p>
+  </footer>
+</body>
+</html>
